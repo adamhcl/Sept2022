@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	
+	
+<!-- Display Name -->
+<display-name>User Management Web Application</display-name>
+
+
+<!-- Welcome File (first place it will go to) -->
+<welcome-file-list>
+        <welcome-file>Home.jsp</welcome-file>
+</welcome-file-list>
+
+
+
+<!-- Servlet Mapping -->
+  <servlet>
+        <servlet-name>DeleteDetails</servlet-name>
+        <servlet-class>com.operations.DeleteDetails</servlet-class>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteDetails</servlet-name>
+        <url-pattern>/DeleteDetails</url-pattern>
+  	</servlet-mapping>
+    
+      <servlet>
+        <servlet-name>InsertDetails</servlet-name>
+        <servlet-class>com.operations.InsertDetails</servlet-class>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertDetails</servlet-name>
+        <url-pattern>/InsertDetails</url-pattern>
+  	</servlet-mapping>
+  	
+  	  <servlet>
+        <servlet-name>SelectDetails</servlet-name>
+        <servlet-class>com.operations.SelectDetails</servlet-class>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectDetails</servlet-name>
+        <url-pattern>/SelectDetails</url-pattern>
+  	</servlet-mapping>
+  	
+  	  <servlet>
+        <servlet-name>UpdateDetails</servlet-name>
+        <servlet-class>com.operations.UpdateDetails</servlet-class>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateDetails</servlet-name>
+        <url-pattern>/UpdateDetails</url-pattern>
+  	</servlet-mapping>
+    
+    
+ 
+    
+</web-app>

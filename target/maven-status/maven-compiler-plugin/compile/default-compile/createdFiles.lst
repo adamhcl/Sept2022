@@ -1,0 +1,5 @@
+com\operations\DeleteDetails.class
+com\operations\InsertDetails.class
+com\operations\UpdateDetails.class
+com\operations\SelectDetails.class
+com\operations\DbUtil.class
