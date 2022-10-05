@@ -9,13 +9,6 @@
 <!-- Display Name -->
 <display-name>User Management Web Application</display-name>
 
-<!-- Welcome File (first place it will go to) -->
-
-
-
-<welcome-file-list>
-	<welcome-file>/welcome.foo</welcome-file>
-</welcome-file-list>
 
 
 

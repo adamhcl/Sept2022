@@ -27,7 +27,7 @@ public class DeleteDetails extends HttpServlet {
 		try {
 			Connection conn = DriverManager.getConnection(DbUtil.url, DbUtil.user, DbUtil.password);
 			System.out.println("connection successful");
-			PreparedStatement st = conn.prepareStatement("delete from employeedetails where stuid=?");
+			PreparedStatement st = conn.prepareStatement("delete from employeedetails where empId=?");
 
 			st.setInt(1, Integer.valueOf(request.getParameter("id")));
 
