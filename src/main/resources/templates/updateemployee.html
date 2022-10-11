@@ -11,7 +11,7 @@
 
   <form action="#" th:action="@{/save}" th:object="${employee}" method="post">
   <!-- Add hidden form field to handle update -->
-            <input type="hidden" th:field="*{id}" />
+            <input type="hidden" th:field="*{emp_id}" />
    <input type="text" th:field="*{emp_name}" placeholder="Enter your emp Name"/><br/>
    <input type="text" th:field="*{empemail}" placeholder="Enter your emp Email"/><br/>
    <input type="submit" value="Update Employee"/>   

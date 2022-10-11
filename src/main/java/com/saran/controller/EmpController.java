@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.saran.model.Employee;
+import com.saran.service.EmpService;
 import com.saran.service.EmpServiceImpl;
 
 @Controller
@@ -39,7 +40,7 @@ public class EmpController {
 	
 	//Adding update
 	@GetMapping("/update/{id}")
-	public String updateEmp(@PathVariable("id") Integer id, Model model) {
+	public String update(@PathVariable("id") Integer id, Model model) {
 		//get employee from the service
 		Employee e = empService.getById(id);
 		
